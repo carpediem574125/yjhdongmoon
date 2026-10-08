@@ -52,11 +52,11 @@
       justify-content: space-between;
     }
 
-    .logo {
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-    }
+    .logo img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
 
     .nav-links {
       display: flex;
@@ -153,6 +153,22 @@
       color: #444;
     }
 
+      .photo {
+  margin: 55px 0 15px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-caption {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
     .history p {
       margin-bottom: 25px;
     }
@@ -170,56 +186,61 @@
       color: #333;
     }
 
-    .activities {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
+    .activity-list {
+  border-top: 1px solid #ccc9c0;
+}
 
-    .activity {
-      background: #eeece7;
-      padding: 30px;
-      min-height: 180px;
-    }
+.activity-block {
+  padding: 45px 0 55px;
+  border-bottom: 1px solid #ccc9c0;
+}
 
-    .activity-number {
-      font-size: 12px;
-      color: #888;
-      margin-bottom: 35px;
-    }
+.activity-number {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 18px;
+}
 
-    .activity h3 {
-      margin-bottom: 10px;
-    }
+.activity-block h3 {
+  font-size: 24px;
+  margin: 0 0 18px;
+  letter-spacing: -0.03em;
+}
 
-    .activity p {
-      font-size: 14px;
-      color: #666;
-      line-height: 1.7;
-    }
+.activity-block p {
+  max-width: 680px;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.8;
+}
 
-    .news-list {
-      border-top: 1px solid #ccc9c0;
-    }
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
 
-    .news-item {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      padding: 22px 0;
-      border-bottom: 1px solid #ccc9c0;
-    }
+.poster-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    .news-title {
-      font-size: 16px;
-    }
+.youtube {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
 
-    .news-date {
-      font-size: 13px;
-      color: #888;
-      white-space: nowrap;
-    }
-
+.youtube iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
+      
     .domain-box {
       max-width: 800px;
       padding: 35px;
@@ -308,18 +329,14 @@
         font-size: 16px;
       }
 
-      .activities {
-        grid-template-columns: 1fr;
-      }
+.poster-grid {
+  grid-template-columns: 1fr;
+}
 
-      .news-item {
-        display: block;
-      }
-
-      .news-date {
-        margin-top: 5px;
-      }
-
+.youtube {
+  grid-template-columns: 1fr;
+}
+      
       .contact-item {
         display: block;
       }
@@ -337,9 +354,9 @@
   <header>
     <div class="container nav">
 
-      <div class="logo">
-        유재하 음악경연대회 총동문회
-      </div>
+    <div class="logo">
+  <img src="images/logo.png" alt="유재하 음악경연대회 총동문회">
+</div>
 
       <nav class="nav-links">
         <a href="#about">ABOUT</a>
@@ -465,7 +482,10 @@
             노리플라이, 정준일, 임헌일 등 실력을 인정받는 음악인들이
             유재하 음악경연대회를 통해 음악 활동을 시작했습니다.
           </p>
-
+<div class="photo">
+  <img src="images/36th-group.jpg" alt="제36회 유재하 음악경연대회 단체사진">
+  <div class="photo-caption">제36회 유재하 음악경연대회</div>
+</div>
           <p>
             최근에도 홍이삭, 터치드, 범진 등 다양한 음악인들이
             유재하 음악경연대회를 통해 새로운 음악을 선보이며
@@ -485,130 +505,68 @@
 
 
     <!-- ACTIVITIES -->
-    <section id="activities">
-      <div class="container">
+<section id="activities">
+  <div class="container">
 
-        <div class="section-label">
-          ACTIVITIES
-        </div>
+    <div class="section-label">
+      ACTIVITIES
+    </div>
 
-        <h2>
-          주요 활동
-        </h2>
+    <h2>
+      주요 활동
+    </h2>
 
-        <div class="activities">
+    <div class="activity-list">
 
-          <div class="activity">
-            <div class="activity-number">01</div>
-            <h3>유재하 음악경연대회</h3>
-            <p>
-              대회의 지속적인 발전과 음악인들의 성장을 위한
-              다양한 활동에 함께합니다.
-            </p>
-          </div>
-
-          <div class="activity">
-            <div class="activity-number">02</div>
-            <h3>동문 교류</h3>
-            <p>
-              유재하 음악경연대회를 통해 인연을 맺은
-              음악인들의 교류와 협력을 이어갑니다.
-            </p>
-          </div>
-
-          <div class="activity">
-            <div class="activity-number">03</div>
-            <h3>공연 및 문화예술 활동</h3>
-            <p>
-              동문 공연과 음악·문화예술 프로젝트를 통해
-              유재하의 음악적 가치와 정신을 이어갑니다.
-            </p>
-          </div>
-
-        </div>
-
+      <div class="activity-block">
+        <div class="activity-number">01</div>
+        <h3>유재하 음악경연대회</h3>
+        <p>
+          대회의 지속적인 발전과 음악인들의 성장을 위한
+          다양한 활동에 함께합니다.
+        </p>
       </div>
-    </section>
 
 
-    <!-- NEWS -->
-    <section id="news">
-      <div class="container">
+      <div class="activity-block">
+        <div class="activity-number">02</div>
+        <h3>이어유재하</h3>
 
-        <div class="section-label">
-          NEWS
+        <div class="poster-grid">
+          <img src="images/eoyujha-01.jpg" alt="이어유재하 포스터 1">
+          <img src="images/eoyujha-02.jpg" alt="이어유재하 포스터 2">
+          <img src="images/eoyujha-03.jpg" alt="이어유재하 포스터 3">
         </div>
-
-        <h2>
-          최근 활동
-        </h2>
-
-        <div class="news-list">
-
-          <div class="news-item">
-            <div class="news-title">
-              제37회 유재하 음악경연대회
-            </div>
-            <div class="news-date">
-              2026
-            </div>
-          </div>
-
-          <div class="news-item">
-            <div class="news-title">
-              유재하 음악경연대회 총동문회 활동
-            </div>
-            <div class="news-date">
-              2026
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section>
 
 
-    <!-- DOMAIN -->
-    <section id="domain">
-      <div class="container">
+      <div class="activity-block">
+        <div class="activity-number">03</div>
+        <h3>유동방송</h3>
 
-        <div class="section-label">
-          ABOUT THE DOMAIN
-        </div>
+        <div class="youtube">
+  <iframe
+    src="https://www.youtube.com/embed/영상ID1"
+    title="유동방송 1"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
 
-        <h2>
-          yjhdongmoon.or.kr
-        </h2>
-
-        <div class="domain-box">
-
-          <div class="domain-name">
-            YJH + dongmoon
-          </div>
-
-          <p>
-            <strong>YJH</strong>는 Yoo Jae Ha를,
-            <strong>dongmoon</strong>은 한국어 ‘동문’을
-            로마자로 표기한 것입니다.
-          </p>
-
-          <p>
-            따라서 <strong>yjhdongmoon</strong>은
-            유재하 음악경연대회의 동문을 의미하며,
-            yjhdongmoon.or.kr은 유재하 음악경연대회 총동문회가
-            사용하는 공식 도메인입니다.
-          </p>
-
-          <p>
-            본 도메인은 총동문회의 공식 웹사이트와
-            조직 이메일 서비스를 위해 사용됩니다.
-          </p>
-
-        </div>
-
+  <iframe
+    src="https://www.youtube.com/embed/영상ID2"
+    title="유동방송 2"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
       </div>
-    </section>
+
+    </div>
+
+  </div>
+</section>
 
 
     <!-- CONTACT -->
@@ -672,6 +630,39 @@
       </div>
     </section>
 
+      <!-- DOMAIN -->
+<section id="domain">
+  <div class="container">
+
+    <div class="domain-box">
+
+      <div class="domain-name">
+        yjhdongmoon.or.kr
+      </div>
+
+      <p>
+        <strong>YJH</strong>는 Yoo Jae Ha를,
+        <strong>dongmoon</strong>은 한국어 ‘동문’을
+        로마자로 표기한 것입니다.
+      </p>
+
+      <p>
+        따라서 <strong>yjhdongmoon</strong>은
+        유재하 음악경연대회의 동문을 의미하며,
+        yjhdongmoon.or.kr은 유재하 음악경연대회 총동문회가
+        사용하는 공식 도메인입니다.
+      </p>
+
+      <p>
+        본 도메인은 총동문회의 공식 웹사이트와
+        조직 이메일 서비스를 위해 사용됩니다.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+    
   </main>
 
 
