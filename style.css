@@ -40,7 +40,7 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
 .identity-card{padding:28px;background:var(--panel)}.identity-card img{width:170px;margin:auto}.identity-copy{color:#4e4b45}
 .fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.fact{padding:24px;background:var(--panel)}.fact strong{display:block;font-size:28px;margin-bottom:5px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.card{padding:26px;background:#fff;border:1px solid var(--line)}.card p{color:#65615a;font-size:14px}
-..archive-note {
+.archive-note {
   width: fit-content;
   max-width: 100%;
   margin: 35px 0 0;
@@ -48,6 +48,7 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
   background: transparent;
   color: #5b5750;
   border: 0;
+}
 .button{display:inline-block;margin-top:18px;padding:10px 16px;border:1px solid #bbb6ac;border-radius:999px;font-size:13px}
 .activity{padding:45px 0;border-top:1px solid #cfcac0}.activity:first-child{border-top:0}
 .poster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}
