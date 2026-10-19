@@ -159,6 +159,21 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
   margin-bottom:0;
 }
 
+.history-summary {
+  max-width: 1050px;
+}
+
+.history-summary p {
+  margin: 0 0 18px;
+}
+
+.history-summary p.space-after {
+  margin-bottom: 30px;
+}
+
+.history-summary p:last-child {
+  margin-bottom: 0;
+}
 
 /* ACTIVITIES */
 .activity + .activity{
