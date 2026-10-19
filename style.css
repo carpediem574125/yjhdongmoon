@@ -77,12 +77,19 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
    ======================================== */
 
 /* ABOUT */
+.text{
+  max-width:1050px;
+}
+
 .identity{
   display:grid;
   grid-template-columns:320px 1fr;
   gap:70px;
   align-items:center;
+  max-width:1050px;
   margin-top:45px;
+  padding-top:45px;
+  border-top:1px solid var(--line);
 }
 
 .identity-logo{
@@ -103,10 +110,6 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 .identity-logo img{
   width:280px;
   height:auto;
-}
-
-.text{
-  max-width:1050px;
 }
 
 
@@ -163,6 +166,9 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
   .identity{
     grid-template-columns:1fr;
     gap:35px;
+    max-width:100%;
+    margin-top:35px;
+    padding-top:35px;
   }
 
   .identity-logo{
