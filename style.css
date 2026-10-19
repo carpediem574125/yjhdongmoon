@@ -23,12 +23,12 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
   display:grid;
   grid-template-columns:320px 1fr;
   gap:70px;
-  align-items:start;
+  align-items:center;
   margin-top:45px}
 
 .identity-logo{
   display:flex;
-  align-items:start;
+  align-items:center;
   justify-content:center;
   background:transparent;
   border:0;
