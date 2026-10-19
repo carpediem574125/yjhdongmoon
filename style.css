@@ -12,12 +12,12 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .hero-inner{padding:100px 0;color:#fff}.hero-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px;opacity:.86}
 .hero h1{font-size:clamp(40px,6vw,78px);line-height:1.08;letter-spacing:-.065em;margin:0 0 16px;font-weight:700}
 .english{font-size:13px;letter-spacing:.12em;opacity:.9;margin-bottom:30px}.official{display:inline-block;border:1px solid rgba(255,255,255,.72);padding:7px 13px;border-radius:999px;font-size:11px}
-.page-hero{padding:95px 0 65px;border-bottom:1px solid var(--line)}
+..page-hero{padding:95px 0 30px;border-bottom:0}
 .eyebrow,.section-label{font-size:10px;letter-spacing:.17em;color:#8a857c;margin-bottom: 0.5rem;text-transform:uppercase}
 h1.page-title{font-size:clamp(30px,4vw,48px);letter-spacing:-.055em;line-height:1.2;margin:0}
 h2{font-size:27px;letter-spacing:-.05em;line-height:1.25;margin:0 0 24px}
 h3{font-size:19px;line-height:1.35;margin:0 0 14px}
-section{padding:80px 0;border-bottom:1px solid var(--line)}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
 .lead{max-width:800px;font-size:18px;color:#4e4b45}.text{max-width:850px;color:#4e4b45}.text p{margin:0 0 22px}
 .identity{display:grid;grid-template-columns:240px 1fr;gap:55px;align-items:start;margin-top:45px}
 .identity-card{padding:28px;background:var(--panel)}.identity-card img{width:170px;margin:auto}.identity-copy{color:#4e4b45}
