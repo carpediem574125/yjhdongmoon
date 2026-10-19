@@ -27,12 +27,20 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
   margin-top:45px}
 
 .identity-logo{
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display:block;
   background:transparent;
   border:0;
   padding:0;
+}
+
+.identity-logo .section-label{
+  margin-bottom:20px;
+}
+
+.identity-logo img{
+  width:280px;
+  height:auto;
+  margin:0 auto;
 }
 
 .identity-logo img{
