@@ -18,7 +18,7 @@ h1.page-title{font-size:clamp(30px,4vw,48px);letter-spacing:-.055em;line-height:
 h2{font-size:27px;letter-spacing:-.05em;line-height:1.25;margin:0 0 24px}
 h3{font-size:19px;line-height:1.35;margin:0 0 14px}
 section{padding:40px 0;border-bottom:1px solid var(--line)}
-.lead{max-width:800px;font-size:18px;color:#4e4b45}.text{max-width:850px;color:#4e4b45}.text p{margin:0;}
+.lead{max-width:800px;font-size:18px;color:#4e4b45}.text{max-width:none;color:#4e4b45}.text p{margin:0;}
 
 .identity-logo{
   display:block;
@@ -48,7 +48,7 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
 }
 .button{display:inline-block;margin-top:18px;padding:10px 16px;border:1px solid #bbb6ac;border-radius:999px;font-size:13px}
 .activity{padding:45px 0;border-top:1px solid #cfcac0}.activity:first-child{border-top:0}
-..poster-grid{
+.poster-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
@@ -106,7 +106,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 
 /* ABOUT */
 .text{
-  max-width:1050px;
+  max-width:none;
 }
 
 .identity{
@@ -178,7 +178,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 }
 
 .history-summary {
-  max-width: 1050px;
+  max-width: nonepx;
   padding-top: 50px !important;
 }
 
