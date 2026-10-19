@@ -68,8 +68,15 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 .text,.identity-copy,.archive-note,.activity,.contact-list{word-break:keep-all;overflow-wrap:break-word}
 .fact-grid.two{grid-template-columns:repeat(2,1fr)}
 .project-lines p{margin:0 0 8px}
-.project-lines strong{display:inline-block;min-width:74px;letter-spacing:.08em;font-size:inherit;color:#888178}
-.instagram-text p{margin:0 0 8px}
+.project-lines strong {
+  display: inline-block;
+  width: 110px;
+  min-width: 110px;
+  letter-spacing: .08em;
+  font-size: inherit;
+  color: #888178;
+  font-weight: 600;
+}
 .activity{border-top:0}
 
 /* ========================================
