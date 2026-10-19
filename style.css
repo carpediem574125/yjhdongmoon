@@ -162,7 +162,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 
 .history-summary {
   max-width: 1050px;
-  padding-top: 30px;
+  padding-top: 30px; !important;
 }
 
 .history-summary p {
