@@ -18,8 +18,27 @@ h1.page-title{font-size:clamp(30px,4vw,48px);letter-spacing:-.055em;line-height:
 h2{font-size:27px;letter-spacing:-.05em;line-height:1.25;margin:0 0 24px}
 h3{font-size:19px;line-height:1.35;margin:0 0 14px}
 section{padding:40px 0;border-bottom:1px solid var(--line)}
-.lead{max-width:800px;font-size:18px;color:#4e4b45}.text{max-width:850px;color:#4e4b45}.text p{margin:0 0 22px}
-.identity{display:grid;grid-template-columns:240px 1fr;gap:55px;align-items:start;margin-top:45px}
+.lead{max-width:800px;font-size:18px;color:#4e4b45}.text{max-width:850px;color:#4e4b45}.text p{margin:0;}
+.identity{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:70px;
+  align-items:start;
+  margin-top:45px}
+
+.identity-logo{
+  display:flex;
+  align-items:start;
+  justify-content:center;
+  background:transparent;
+  border:0;
+  padding:0;
+}
+
+.identity-logo img{
+  width:280px;
+  height:auto;
+}
 .identity-card{padding:28px;background:var(--panel)}.identity-card img{width:170px;margin:auto}.identity-copy{color:#4e4b45}
 .fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.fact{padding:24px;background:var(--panel)}.fact strong{display:block;font-size:28px;margin-bottom:5px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.card{padding:26px;background:#fff;border:1px solid var(--line)}.card p{color:#65615a;font-size:14px}
@@ -33,8 +52,18 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
 .contact-label{color:#888178;font-size:12px;letter-spacing:.08em}.contact-value{font-size:15px}
 .footer{padding:45px 0;color:#77736b;font-size:12px}.footer-name{color:#282622;font-size:14px;margin-bottom:7px}
 @media(max-width:760px){
-.nav{padding:16px 0;align-items:flex-start;flex-direction:column}.nav-links{gap:13px 18px}.hero{min-height:78vh}.hero-inner{padding:75px 0}
-section{padding:65px 0}.identity{grid-template-columns:1fr}.fact-grid,.cards{grid-template-columns:1fr}.poster-grid,.youtube{grid-template-columns:1fr}.contact-item{grid-template-columns:1fr;gap:4px}
+.nav{padding:16px 0;align-items:flex-start;flex-direction:column}
+.nav-links{gap:13px 18px}
+.hero{min-height:78vh}
+.hero-inner{padding:75px 0}
+  
+section{padding:40px 0}
+
+.identity{grid-template-columns:1fr;gap:35px;}
+.identity-logo img{width:260px;}
+.fact-grid,.cards{grid-template-columns:1fr}
+.poster-grid,.youtube{grid-template-columns:1fr}
+.contact-item{grid-template-columns:1fr;gap:4px}
 }
 
 /* V5 refinements */
@@ -46,7 +75,9 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 .project-lines strong{display:inline-block;min-width:74px;letter-spacing:.08em;font-size:11px;color:#888178}
 .instagram-text p{margin:0 0 8px}
 .activity{border-top:0}
-@media(max-width:760px){.fact-grid.two{grid-template-columns:1fr}.page-hero{padding:78px 0 55px}}
+@media(max-width:760px){
+  .fact-grid.two{grid-template-columns:1fr}
+  .page-hero{padding:78px 0 30px}}
 
 /* V6: Korean text wraps by words, with natural mobile line breaks. */
 .text p, .project-lines p, .identity-copy p, .history-content p, .concours-content p { word-break: keep-all; overflow-wrap: break-word; }
