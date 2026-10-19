@@ -12,19 +12,13 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .hero-inner{padding:100px 0;color:#fff}.hero-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px;opacity:.86}
 .hero h1{font-size:clamp(40px,6vw,78px);line-height:1.08;letter-spacing:-.065em;margin:0 0 16px;font-weight:700}
 .english{font-size:13px;letter-spacing:.12em;opacity:.9;margin-bottom:30px}.official{display:inline-block;border:1px solid rgba(255,255,255,.72);padding:7px 13px;border-radius:999px;font-size:11px}
-..page-hero{padding:95px 0 30px;border-bottom:0}
+.page-hero{padding:95px 0 30px;border-bottom:0}
 .eyebrow,.section-label{font-size:10px;letter-spacing:.17em;color:#8a857c;margin-bottom: 0.5rem;text-transform:uppercase}
 h1.page-title{font-size:clamp(30px,4vw,48px);letter-spacing:-.055em;line-height:1.2;margin:0}
 h2{font-size:27px;letter-spacing:-.05em;line-height:1.25;margin:0 0 24px}
 h3{font-size:19px;line-height:1.35;margin:0 0 14px}
 section{padding:40px 0;border-bottom:1px solid var(--line)}
 .lead{max-width:800px;font-size:18px;color:#4e4b45}.text{max-width:850px;color:#4e4b45}.text p{margin:0;}
-.identity{
-  display:grid;
-  grid-template-columns:320px 1fr;
-  gap:70px;
-  align-items:center;
-  margin-top:45px}
 
 .identity-logo{
   display:block;
@@ -43,10 +37,6 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
   margin:0 auto;
 }
 
-.identity-logo img{
-  width:280px;
-  height:auto;
-}
 .identity-card{padding:28px;background:var(--panel)}.identity-card img{width:170px;margin:auto}.identity-copy{color:#4e4b45}
 .fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.fact{padding:24px;background:var(--panel)}.fact strong{display:block;font-size:28px;margin-bottom:5px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.card{padding:26px;background:#fff;border:1px solid var(--line)}.card p{color:#65615a;font-size:14px}
@@ -67,8 +57,6 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
   
 section{padding:40px 0}
 
-.identity{grid-template-columns:1fr;gap:35px;}
-.identity-logo img{width:260px;}
 .fact-grid,.cards{grid-template-columns:1fr}
 .poster-grid,.youtube{grid-template-columns:1fr}
 .contact-item{grid-template-columns:1fr;gap:4px}
@@ -83,13 +71,117 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 .project-lines strong{display:inline-block;min-width:74px;letter-spacing:.08em;font-size:11px;color:#888178}
 .instagram-text p{margin:0 0 8px}
 .activity{border-top:0}
+
+/* ========================================
+   PAGE-SPECIFIC REFINEMENTS
+   ======================================== */
+
+/* ABOUT */
+.identity{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:70px;
+  align-items:center;
+  margin-top:45px;
+}
+
+.identity-logo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border:0;
+  padding:0;
+}
+
+.identity-logo .section-label{
+  align-self:flex-start;
+  margin-bottom:20px;
+}
+
+.identity-logo img{
+  width:280px;
+  height:auto;
+}
+
+.text{
+  max-width:1050px;
+}
+
+
+/* CONCOURS */
+.concours-content{
+  max-width:1050px;
+}
+
+.concours-content p{
+  margin:0 0 18px;
+}
+
+.concours-content p:last-child{
+  margin-bottom:0;
+}
+
+
+/* HISTORY */
+.history-content{
+  max-width:1050px;
+}
+
+.history-content p{
+  margin:0 0 18px;
+}
+
+.history-content p:last-child{
+  margin-bottom:0;
+}
+
+
+/* ACTIVITIES */
+.activity + .activity{
+  border-top:1px solid var(--line);
+  padding-top:45px;
+  margin-top:45px;
+}
+
+
+/* CONTACT */
+.contact-list{
+  margin-bottom:70px;
+}
+
 @media(max-width:760px){
-  .fact-grid.two{grid-template-columns:1fr}
-  .page-hero{padding:78px 0 30px}}
+  .fact-grid.two{
+    grid-template-columns:1fr;
+  }
+
+  .page-hero{
+    padding:78px 0 30px;
+  }
+
+  .identity{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .identity-logo{
+    align-items:flex-start;
+  }
+
+  .identity-logo img{
+    width:260px;
+    margin:auto;
+  }
+
+  .text,
+  .concours-content,
+  .history-content{
+    max-width:100%;
+  }
+}
+
 
 /* V6: Korean text wraps by words, with natural mobile line breaks. */
 .text p, .project-lines p, .identity-copy p, .history-content p, .concours-content p { word-break: keep-all; overflow-wrap: break-word; }
-.activity + .activity { border-top: 1px solid rgba(255,255,255,.18); padding-top: 2rem; margin-top: 2rem; }
-
-.identity-logo { background: transparent; border: 0; padding: 0; }
 .about-compact, .text { line-height: 1.85; }
