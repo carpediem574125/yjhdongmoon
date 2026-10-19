@@ -67,13 +67,17 @@ section{padding:40px 0}
 h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 .text,.identity-copy,.archive-note,.activity,.contact-list{word-break:keep-all;overflow-wrap:break-word}
 .fact-grid.two{grid-template-columns:repeat(2,1fr)}
-.project-lines p{margin:0 0 8px}
+.project-lines p {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: baseline;
+  margin: 0 0 8px;
+}
+
 .project-lines strong {
-  display: inline-block;
-  width: 120px;
-  min-width: 120px;
-  letter-spacing: .08em;
+  display: block;
   font-size: inherit;
+  letter-spacing: .08em;
   color: #888178;
   font-weight: 600;
 }
