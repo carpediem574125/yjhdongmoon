@@ -215,11 +215,12 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
     margin:auto;
   }
 
-  .text,
-  .concours-content,
-  .history-content{
-    max-width:100%;
-  }
+.text,
+.concours-content,
+.history-content,
+.history-summary {
+  max-width: 100%;
+}
 }
 
 
