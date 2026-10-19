@@ -41,13 +41,10 @@ section{padding:40px 0;border-bottom:1px solid var(--line)}
 .fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.fact{padding:24px;background:var(--panel)}.fact strong{display:block;font-size:28px;margin-bottom:5px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.card{padding:26px;background:#fff;border:1px solid var(--line)}.card p{color:#65615a;font-size:14px}
 .archive-note {
-  width: fit-content;
-  max-width: 100%;
-  margin: 35px 0 0;
-  padding: 0;
-  background: transparent;
+  margin-top: 35px;
+  padding: 26px;
+  background: var(--panel);
   color: #5b5750;
-  border: 0;
 }
 .button{display:inline-block;margin-top:18px;padding:10px 16px;border:1px solid #bbb6ac;border-radius:999px;font-size:13px}
 .activity{padding:45px 0;border-top:1px solid #cfcac0}.activity:first-child{border-top:0}
@@ -153,7 +150,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 /* HISTORY */
 .history-content {
   max-width: 1050px;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .history-content p{
@@ -170,7 +167,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 
 .history-summary {
   max-width: 1050px;
-  padding-top: 30px; !important;
+  padding-top: 50px; !important;
 }
 
 .history-summary p {
