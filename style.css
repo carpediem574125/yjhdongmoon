@@ -145,7 +145,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 /* HISTORY */
 .history-content {
   max-width: 1050px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .history-content p{
