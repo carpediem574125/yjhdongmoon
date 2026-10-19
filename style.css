@@ -85,7 +85,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
   display:grid;
   grid-template-columns:320px 1fr;
   gap:70px;
-  align-items:center;
+  align-items:start;
   max-width:1050px;
   margin-top:45px;
   padding-top:45px;
@@ -122,6 +122,10 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
   margin:0 0 18px;
 }
 
+.concours-content p.space-after{
+  margin-bottom:30px;
+}
+
 .concours-content p:last-child{
   margin-bottom:0;
 }
@@ -134,6 +138,10 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 
 .history-content p{
   margin:0 0 18px;
+}
+
+.concours-content p.space-after{
+  margin-bottom:30px;
 }
 
 .history-content p:last-child{
