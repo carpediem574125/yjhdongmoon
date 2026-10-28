@@ -296,5 +296,7 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
   }
 }
 .english-text {
-  font-size: 0.9em;
+  font-size: 0.82em;
+  color: #888888;
+  line-height: 1.7;
 }
