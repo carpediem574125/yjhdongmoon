@@ -294,9 +294,10 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
     overflow-wrap: anywhere;
     word-break: normal;
   }
-}
-.english-text {
-  font-size: 0.82em;
-  color: #888888;
-  line-height: 1.7;
+/* ABOUT: English text */
+.text p.english-text,
+.identity-copy p.english-text {
+  font-size: 13px !important;
+  color: #89857e !important;
+  line-height: 1.8;
 }
