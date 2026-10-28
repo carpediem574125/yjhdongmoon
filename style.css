@@ -246,3 +246,52 @@ h1.page-title{font-size:clamp(27px,3.4vw,42px)}
 /* V6: Korean text wraps by words, with natural mobile line breaks. */
 .text p, .project-lines p, .identity-copy p, .history-content p, .concours-content p { word-break: keep-all; overflow-wrap: break-word; }
 .about-compact, .text { line-height: 1.85; }
+/* FOOTER: organization details */
+.footer-details {
+  margin-top: 16px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.footer-details-en {
+  margin-top: 10px;
+}
+
+.footer-relationship {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.footer-relationship p {
+  margin: 0 0 10px;
+}
+
+.footer-relationship p:last-child {
+  margin-bottom: 0;
+}
+
+.footer-relationship a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-copyright {
+  margin-top: 18px;
+  font-size: 11px;
+}
+
+@media (max-width: 760px) {
+  .footer {
+    padding: 35px 0;
+  }
+
+  .footer-details,
+  .footer-relationship {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
